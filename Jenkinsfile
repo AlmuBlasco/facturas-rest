@@ -34,7 +34,7 @@ pipeline{
 
         stage("Cerrar recursos"){
             steps{
-                bat "docker stop app1"
+                bat "docker stop app-facturas-node"
                 bat "docker container rm app-facturas-node"
                 bat "docker image rm ablasco/facturas-node-16"
             }
